@@ -7,6 +7,5 @@ project(
   DESCRIPTION "An HTTP server made \"from scratch.\""
   HOMEPAGE_URL https://github.com/juniorpen01/c-juniorpen01s-http-server)
 
-add_executable(${EXE_NAME} /${CMAKE_SOURCE_DIR}/src/main.c)
-target_compile_options(${EXE_NAME} PRIVATE -Weverything -Werror)
-target_include_directories(${EXE_NAME} PRIVATE /${CMAKE_SOURCE_DIR}/include)
+add_subdirectory(app)
+add_subdirectory(core)
